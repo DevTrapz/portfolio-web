@@ -17,7 +17,7 @@ const person: Person = {
   role: "Software Engineer",
   avatar: "/images/avatar.png",
   email: "andy.apod@gmail.com",
-  location: "CST6CDT", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  timezone: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English"], // optional: Leave the array empty if you don't want to display languages
 };
 

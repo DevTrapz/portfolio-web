@@ -25,7 +25,7 @@ const routes: RoutesConfig = {
 };
 
 const display: DisplayConfig = {
-  location: true,
+  timezone: true,
   time: true,
   themeSwitcher: true,
 };
