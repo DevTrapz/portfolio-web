@@ -96,6 +96,10 @@ export default function About() {
             <Avatar src={person.avatar} size="xl" />
             <Row gap="8" vertical="center">
               <Icon onBackground="accent-weak" name="globe" />
+              {person.location}
+            </Row>
+            <Row gap="8" vertical="center">
+              <Icon onBackground="accent-weak" name="clock" />
               {person.timezone}
             </Row>
             {person.languages && person.languages.length > 0 && (
