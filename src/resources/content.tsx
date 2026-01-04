@@ -18,7 +18,8 @@ const person: Person = {
   avatar: "/images/avatar.png",
   email: "andy.apod@gmail.com",
   timezone: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English"], // optional: Leave the array empty if you don't want to display languages
+  location: "Nashville, TN",
+  languages: [], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -47,6 +48,12 @@ const social: Social = [
     name: "Email",
     icon: "email",
     link: `mailto:${person.email}`,
+    essential: true,
+  },
+  {
+    name: "Discord",
+    icon: "discord",
+    link: `https://discord.com/channels/@me/trapzck/`,
     essential: true,
   },
 ];
@@ -87,7 +94,7 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Meet ${person.name}, ${person.role} from ${person.timezone}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -97,17 +104,15 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://calendar.app.google/dgap1AU5zKy5BiQv9",
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for
-        transforming complex challenges into simple, elegant design solutions.
-        Her work spans digital interfaces, interactive experiences, and the
-        convergence of design and technology.
+        Andrew is a Software Engineer helping businesses streamline CRM
+        operations, develop online portals, and integrate their data systems.
       </>
     ),
   },
@@ -116,17 +121,24 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Denari Software",
+        timeframe: "2025 - Present",
+        role: "Software Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
+            Developed a monday.com app that allows users to select multiple
+            items for bulk actions, integrating with their external systems
+            using React, JavaScript, Vibe Design System, GraphQL, and Webhooks.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            Engineered complex, cross-account data integrations for monday
+            clients, connecting their workspaces with an external SQL server
+            using make.com, JavaScript, GraphQL, and Webhooks.
+          </>,
+          <>
+            Developed email & activities integration for monday CRM for emails
+            sent from an external service that attaches the full HTML email
+            content to CRM contacts.
           </>,
         ],
         images: [
@@ -140,9 +152,9 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Avery Automations",
+        timeframe: "2025 - Present",
+        role: "Solutions Engineer",
         achievements: [
           <>
             Developed a design system that unified the brand across multiple
@@ -155,19 +167,127 @@ const about: About = {
         ],
         images: [],
       },
+      {
+        company: "Support Pets",
+        timeframe: "Aug 2025 - Present",
+        role: "Software Contractor",
+        achievements: [
+          <>
+            The existing subscription renewal process was insecure, provided a
+            poor user experience, and had a high failure rate, which directly
+            led to low customer retention rates.
+          </>,
+          <>
+            Designed a solution to secure the one-click resubscribe payment
+            processor utilizing Node.js, Express, WebSockets, Docker, and AWS
+            ECS to integrate seamlessly with their CRM.
+          </>,
+          <>
+            Consulted on strategic feature expansion for family-based
+            subscriptions, scoping the technical requirements for CRM data
+            modeling and billing logic to support new user roles and access
+            permissions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Center for Intuitive Education",
+        timeframe: "Nov 2025 - Present",
+        role: "Software Contractor ( Frontend )",
+        achievements: [
+          <>
+            The core product utilised an unreliable document generator that
+            frequently went offline, was uneditable, and prevented their
+            students from printing out critical documents.
+          </>,
+          <>
+            Developed a web app that integrated with their education platform to
+            reliably generate the document for download.
+          </>,
+          <>
+            Restored critical document access for all students, boosting system
+            availability from 25% to 100% while providing the flexibility for
+            users to edit and download essential documents.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Brand Financial Training",
+        timeframe: "Jun 2025 - Nov 2025",
+        role: "Software Contractor ( Backend )",
+        achievements: [
+          <>
+            The business was relying on a costly external email service to
+            compensate for a missing CRM feature, resulting in fragmented
+            subscriber management.
+          </>,
+          <>
+            Engineered a custom backend API to integrate the website's RSS feed
+            directly with the CRM, providing seamless, automated email
+            subscription updates without the need for an expensive third-party
+            service.
+          </>,
+          <>
+            The solution centralised contact and subscriber management in a
+            single CRM service, reducing complexity and saving the business $600
+            per month in expenses.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Brightside Chiropractor",
+        timeframe: "Aug 2025 - Oct 2025",
+        role: "Software Contractor ( Backend )",
+        achievements: [
+          <>
+            The online scheduling system had been offline for months, resulting
+            in patient loss and the need for manual scheduling via phone calls.
+          </>,
+          <>
+            Troubleshooted and restored the full functionality of the frontend
+            scheduling system using JavaScript, HTML, and CSS.
+          </>,
+          <>
+            Restored system availability from 0% to 100%, which streamlined
+            patient scheduling and led to a 30% increase in appointments.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Monday Man",
+        timeframe: "Jun 2023 - Mar 2024",
+        role: "Software Contractor ( Frontend  )",
+        achievements: [
+          <>
+            The core product was being administered on a monday.com board that
+            lacked real-time data, complete user information, and required
+            manual updates.
+          </>,
+          <>
+            Developed a custom monday.com app for subscription management using
+            React, JavaScript, TypeScript, and Vibe Design System.
+          </>,
+          <>
+            Streamlined subscription management operations by providing a
+            platform to track customer subscriptions, search and filtering
+            tools, and insights on usage, payments, and other vital data.
+          </>,
+        ],
+        images: [],
+      },
     ],
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Western Govonors University",
+        description: <>B.S. Software Engineering</>,
       },
     ],
   },
