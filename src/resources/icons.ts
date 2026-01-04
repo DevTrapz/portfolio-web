@@ -12,6 +12,7 @@ import {
   HiOutlineDocument,
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
+  HiClock
 } from "react-icons/hi2";
 
 import {
@@ -27,7 +28,12 @@ import {
   SiNextdotjs,
   SiFigma,
   SiSupabase,
+  SiMake,
+  SiDocker,
+  SiTypescript,
 } from "react-icons/si";
+
+import { CgMonday } from "react-icons/cg";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
 
@@ -64,6 +70,11 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  monday: CgMonday,
+  make: SiMake,
+  docker: SiDocker,
+  typescript: SiTypescript,
+  clock: HiClock
 };
 
 export type IconLibrary = typeof iconLibrary;
