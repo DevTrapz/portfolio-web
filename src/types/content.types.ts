@@ -152,6 +152,11 @@ export interface About extends BasePageConfig {
       timeframe: string;
       /** Role or job title */
       role: string;
+      /** Skill tags */
+      tags?: Array<{
+        name: string;
+        icon?: string;
+      }>;
       /** Achievements at the company */
       achievements: React.ReactNode[];
       /** Images related to the experience */
@@ -239,4 +244,17 @@ export interface Gallery extends BasePageConfig {
     /** Image orientation (horizontal/vertical) */
     orientation: string;
   }>;
+}
+
+/**
+ * Represents the brand configuration.
+ * @description Configuration for the Brand, including styled title and name.
+ */
+export interface Brand {
+  /** Whether to display the brand  */
+  display: boolean
+  /** Styled Brand title  */
+  title: React.ReactNode
+  /** Name of the brand*/
+  name: string
 }

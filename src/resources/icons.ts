@@ -31,11 +31,16 @@ import {
   SiMake,
   SiDocker,
   SiTypescript,
+  SiReact,
+  SiHtml5,
+  SiCss3,
+  SiZapier,
+  SiGraphql
 } from "react-icons/si";
 
 import { CgMonday } from "react-icons/cg";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaRss } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -74,7 +79,13 @@ export const iconLibrary: Record<string, IconType> = {
   make: SiMake,
   docker: SiDocker,
   typescript: SiTypescript,
-  clock: HiClock
+  clock: HiClock,
+  react: SiReact,
+  html: SiHtml5,
+  css: SiCss3,
+  zapier: SiZapier,
+  rss: FaRss,
+  graphql: SiGraphql
 };
 
 export type IconLibrary = typeof iconLibrary;

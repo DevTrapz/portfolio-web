@@ -247,13 +247,32 @@ export default function About() {
                         {experience.timeframe}
                       </Text>
                     </Row>
-                    <Text
-                      variant="body-default-s"
-                      onBackground="brand-weak"
-                      marginBottom="m"
-                    >
-                      {experience.role}
-                    </Text>
+                    <Row horizontal="between" marginBottom="m">
+                      <Column>
+                        <Text
+                          variant="body-default-s"
+                          onBackground="brand-weak"
+                        >
+                          {experience.role}
+                        </Text>
+                      </Column>
+                      <Column>
+                        {experience.tags && experience.tags.length > 0 && (
+                          <Row wrap gap="8" paddingTop="8">
+                            {experience.tags.map((tag, tagIndex) => (
+                              <Tag
+                                key={`${tag.name}-${tagIndex}`}
+                                size="l"
+                                prefixIcon={tag.icon}
+                              >
+                                {tag.name}
+                              </Tag>
+                            ))}
+                          </Row>
+                        )}
+                      </Column>
+                    </Row>
+
                     <Column as="ul" gap="16">
                       {experience.achievements.map(
                         (achievement: React.ReactNode, index: number) => (

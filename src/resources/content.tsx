@@ -124,6 +124,20 @@ const about: About = {
         company: "Denari Software",
         timeframe: "2025 - Present",
         role: "Software Engineer",
+        tags: [
+          {
+            name: "React",
+            icon: "react",
+          },
+          {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+          {
+            name: "GraphQL",
+            icon: "graphql",
+          },
+        ],
         achievements: [
           <>
             Developed a monday.com app that allows users to select multiple
@@ -155,14 +169,35 @@ const about: About = {
         company: "Avery Automations",
         timeframe: "2025 - Present",
         role: "Solutions Engineer",
+        tags: [
+          {
+            name: "React",
+            icon: "react",
+          },
+          {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+          {
+            name: "GraphQL",
+            icon: "graphql",
+          },
+        ],
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Consulted 10+ business clients to analyze complex system
+            requirements and architect comprehensive, tailored solutions across
+            CRM, integration, and custom web apps.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Engineered robust, full-stack solutions for Ontraport CRM clients,
+            leveraging React, JavaScript, RSS/Webhooks APIs, and Google Cloud to
+            resolve critical operational limitations.
+          </>,
+          <>
+            Enhanced project delivery efficiency by developing a custom Project
+            Management System (PMS) on monday.com with advanced GraphQL
+            integrations, resulting in a 25% reduction in project delivery time.
           </>,
         ],
         images: [],
@@ -171,6 +206,20 @@ const about: About = {
         company: "Support Pets",
         timeframe: "Aug 2025 - Present",
         role: "Software Contractor",
+        tags: [
+          {
+            name: "JavaScript",
+            icon: "javascript",
+          },
+          {
+            name: "HTML",
+            icon: "html",
+          },
+          {
+            name: "CSS",
+            icon: "css",
+          },
+        ],
         achievements: [
           <>
             The existing subscription renewal process was insecure, provided a
@@ -195,6 +244,20 @@ const about: About = {
         company: "Center for Intuitive Education",
         timeframe: "Nov 2025 - Present",
         role: "Software Contractor ( Frontend )",
+        tags: [
+          {
+            name: "React",
+            icon: "react",
+          },
+          {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+          {
+            name: "Docker",
+            icon: "docker",
+          },
+        ],
         achievements: [
           <>
             The core product utilised an unreliable document generator that
@@ -217,6 +280,20 @@ const about: About = {
         company: "Brand Financial Training",
         timeframe: "Jun 2025 - Nov 2025",
         role: "Software Contractor ( Backend )",
+        tags: [
+          {
+            name: "JavaScript",
+            icon: "javascript",
+          },
+          {
+            name: "Zapier",
+            icon: "zapier",
+          },
+          {
+            name: "RSS",
+            icon: "rss",
+          },
+        ],
         achievements: [
           <>
             The business was relying on a costly external email service to
@@ -241,6 +318,20 @@ const about: About = {
         company: "Brightside Chiropractor",
         timeframe: "Aug 2025 - Oct 2025",
         role: "Software Contractor ( Backend )",
+        tags: [
+          {
+            name: "JavaScript",
+            icon: "javascript",
+          },
+          {
+            name: "HTML",
+            icon: "html",
+          },
+          {
+            name: "CSS",
+            icon: "css",
+          },
+        ],
         achievements: [
           <>
             The online scheduling system had been offline for months, resulting
@@ -261,6 +352,20 @@ const about: About = {
         company: "Monday Man",
         timeframe: "Jun 2023 - Mar 2024",
         role: "Software Contractor ( Frontend  )",
+        tags: [
+          {
+            name: "React",
+            icon: "react",
+          },
+          {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+          {
+            name: "Monday",
+            icon: "monday",
+          },
+        ],
         achievements: [
           <>
             The core product was being administered on a monday.com board that
