@@ -254,7 +254,7 @@ export interface Brand {
   /** Whether to display the brand  */
   display: boolean
   /** Styled Brand title  */
-  title: React.ReactNode
-  /** Name of the brand*/
   name: string
+  /** Path to logo image */
+  image: string
 }

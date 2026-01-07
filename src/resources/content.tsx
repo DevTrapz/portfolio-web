@@ -7,6 +7,7 @@ import {
   Person,
   Social,
   Work,
+  Brand,
 } from "@/types";
 import { Line, Row, Text } from "@once-ui-system/core";
 
@@ -64,9 +65,9 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building bridges between technology and people</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Once UI</strong>{" "}
@@ -80,12 +81,12 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
+      I'm Andrew, a
       <Text as="span" size="xl" weight="strong">
-        ONCE UI
+        {" "}
+        software engineer{" "}
       </Text>
-      , where I craft intuitive <br /> user experiences. After hours, I build my
-      own projects.
+      building solutions for businesses and making technology simple.
     </>
   ),
 };
@@ -529,4 +530,10 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+const brand: Brand = {
+  display: true,
+  image: "/images/dev-atomics-logo.svg",
+  name: "Dev Atomics",
+};
+
+export { person, social, newsletter, home, about, blog, work, gallery, brand };
