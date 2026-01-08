@@ -129,6 +129,7 @@ const about: About = {
     experiences: [
       {
         company: "Denari Software",
+        companyUrl: "https://mmautomations.ai/",
         timeframe: "2025 - Present",
         role: "Software Engineer",
         tags: [
@@ -174,6 +175,7 @@ const about: About = {
       },
       {
         company: "Avery Automations",
+        companyUrl: "https://www.averyautomations.com",
         timeframe: "2025 - Present",
         role: "Solutions Engineer",
         tags: [
@@ -211,6 +213,7 @@ const about: About = {
       },
       {
         company: "Support Pets",
+        companyUrl: "https://www.supportpets.com/",
         timeframe: "Aug 2025 - Present",
         role: "Software Contractor",
         tags: [
@@ -249,6 +252,7 @@ const about: About = {
       },
       {
         company: "Center for Intuitive Education",
+        companyUrl: "https://www.centerforintuitiveeducation.org/",
         timeframe: "Nov 2025 - Present",
         role: "Software Contractor ( Frontend )",
         tags: [
@@ -285,6 +289,7 @@ const about: About = {
       },
       {
         company: "Brand Financial Training",
+        companyUrl: "https://brandft.co.uk/",
         timeframe: "Jun 2025 - Nov 2025",
         role: "Software Contractor ( Backend )",
         tags: [
@@ -323,6 +328,8 @@ const about: About = {
       },
       {
         company: "Brightside Chiropractor",
+        companyUrl: "https://brightsideutah.com/",
+
         timeframe: "Aug 2025 - Oct 2025",
         role: "Software Contractor ( Backend )",
         tags: [
@@ -357,6 +364,7 @@ const about: About = {
       },
       {
         company: "Monday Man",
+        companyUrl: "https://themondayman.com/",
         timeframe: "Jun 2023 - Mar 2024",
         role: "Software Contractor ( Frontend  )",
         tags: [
