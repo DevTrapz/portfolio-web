@@ -538,7 +538,7 @@ const gallery: Gallery = {
 
 const brand: Brand = {
   display: true,
-  image: "/images/dev-atomics-logo.svg",
+  image: "/images/brand/dev-atomics-logo.svg",
   name: "Dev Atomics",
 };
 
