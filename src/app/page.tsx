@@ -4,6 +4,7 @@ import {
   Button,
   Avatar,
   RevealFx,
+  MatrixFx,
   Column,
   Badge,
   Row,
@@ -65,17 +66,37 @@ export default function Home() {
               </Badge>
             </RevealFx>
           )}
-          <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
+          <RevealFx
+            translateY="4"
+            fillWidth
+            horizontal="center"
+            paddingBottom="16"
+          >
             <Heading wrap="balance" variant="display-strong-l">
               {home.headline}
             </Heading>
           </RevealFx>
-          <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="32">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+          <RevealFx
+            translateY="8"
+            delay={0.2}
+            fillWidth
+            horizontal="center"
+            paddingBottom="32"
+          >
+            <Text
+              wrap="balance"
+              onBackground="neutral-weak"
+              variant="heading-default-xl"
+            >
               {home.subline}
             </Text>
           </RevealFx>
-          <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
+          <RevealFx
+            paddingTop="12"
+            delay={0.4}
+            horizontal="center"
+            paddingLeft="12"
+          >
             <Button
               id="about"
               data-border="rounded"
@@ -101,7 +122,21 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
+        <Column fillWidth gap="40" horizontal="center" marginTop="40">
+          <Line maxWidth="40" />
+          <Heading as="h2" variant="heading-strong-xl" marginBottom="24">
+            Recent projects
+          </Heading>
+        </Column>
+      </RevealFx>
+      <RevealFx translateY="16" delay={0.6}>
         <Projects range={[1, 1]} />
+      </RevealFx>
+      <RevealFx translateY="16" delay={0.8}>
+        <Projects range={[2, 2]} />
+      </RevealFx>
+      <RevealFx translateY="16" delay={1}>
+        <Projects range={[3, 3]} />
       </RevealFx>
       {routes["/blog"] && (
         <Column fillWidth gap="24" marginBottom="l">
@@ -123,7 +158,8 @@ export default function Home() {
           </Row>
         </Column>
       )}
-      <Projects range={[2]} />
+      <MatrixFx height={12} flicker colors={["brand-solid-strong"]}></MatrixFx>
+      <Projects range={[4]} />
       <Mailchimp />
     </Column>
   );
