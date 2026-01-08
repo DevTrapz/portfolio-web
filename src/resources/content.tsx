@@ -9,7 +9,7 @@ import {
   Work,
   Brand,
 } from "@/types";
-import { Line, Row, Text } from "@once-ui-system/core";
+import { Line, ShineFx, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
   firstName: "Andrew",
