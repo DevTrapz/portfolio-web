@@ -16,7 +16,7 @@ const person: Person = {
   lastName: "Apodaca",
   name: "Andrew Apodaca",
   role: "Software Engineer",
-  avatar: "/images/avatar.png",
+  avatar: "/images/avatars/andrew.png",
   email: "andy.apod@gmail.com",
   timezone: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   location: "Nashville, TN",
