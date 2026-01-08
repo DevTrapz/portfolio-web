@@ -67,25 +67,31 @@ const home: Home = {
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Building bridges between technology and people</>,
   featured: {
-    display: false,
+    display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">Dev Atomics</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/rss-email-forwarding",
   },
   subline: (
     <>
-      I'm Andrew, a
-      <Text as="span" size="xl" weight="strong">
-        {" "}
-        software engineer{" "}
-      </Text>
+      I'm Andrew, a{" "}
+      <ShineFx
+        onBackground="neutral-medium"
+        as="span"
+        size="xl"
+        weight="strong"
+        inverse
+        speed={5}
+      >
+        software engineer
+      </ShineFx>{" "}
       building solutions for businesses and making technology simple.
     </>
   ),
