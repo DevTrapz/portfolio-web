@@ -7,18 +7,25 @@ type Team = {
   role: string;
   avatar: string;
   linkedIn: string;
+  displayAvatarProjectCard: boolean;
 };
 
 type Metadata = {
+  display: boolean;
   title: string;
   subtitle?: string;
   publishedAt: string;
   summary: string;
   image?: string;
   images: string[];
-  tag?: string;
+  tags?: Array<{
+    name: string;
+    icon?: string;
+  }>;
   team: Team[];
   link?: string;
+  company: string;
+  companyUrl: string;
 };
 
 import { notFound } from "next/navigation";
@@ -40,15 +47,18 @@ function readMDXFile(filePath: string) {
   const { data, content } = matter(rawContent);
 
   const metadata: Metadata = {
+    display: data.display || false,
     title: data.title || "",
     subtitle: data.subtitle || "",
     publishedAt: data.publishedAt,
     summary: data.summary || "",
     image: data.image || "",
     images: data.images || [],
-    tag: data.tag || [],
+    tags: data.tags || [],
     team: data.team || [],
     link: data.link || "",
+    company: data.company || "",
+    companyUrl: data.companyUrl || "#"
   };
 
   return { metadata, content };

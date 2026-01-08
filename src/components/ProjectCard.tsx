@@ -8,10 +8,14 @@ import {
   Heading,
   SmartLink,
   Text,
+  Row,
+  Tag,
 } from "@once-ui-system/core";
 
 interface ProjectCardProps {
   href: string;
+  company: string;
+  companyUrl: string;
   priority?: boolean;
   images: string[];
   title: string;
@@ -19,6 +23,10 @@ interface ProjectCardProps {
   description: string;
   avatars: { src: string }[];
   link: string;
+  tags: Array<{
+    name: string;
+    icon?: string;
+  }>;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -29,6 +37,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   avatars,
   link,
+  tags,
+  company,
+  companyUrl,
 }) => {
   return (
     <Column fillWidth gap="m">
@@ -48,17 +59,35 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         gap="l"
       >
         {title && (
-          <Flex flex={5}>
+          <Flex direction="column" gap="8" flex={5}>
             <Heading as="h2" wrap="balance" variant="heading-strong-xl">
               {title}
             </Heading>
+            <SmartLink href={companyUrl}>{company}</SmartLink>
           </Flex>
         )}
         {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
           <Column flex={7} gap="16">
-            {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
+            {avatars?.length > 0 && (
+              <AvatarGroup avatars={avatars} size="m" reverse />
+            )}
+            <Row wrap gap="8" paddingTop="8">
+              {tags.map((tag, tagIndex) => (
+                <Tag
+                  key={`${tag.name}-${tagIndex}`}
+                  size="l"
+                  prefixIcon={tag.icon}
+                >
+                  {tag.name}
+                </Tag>
+              ))}
+            </Row>
             {description?.trim() && (
-              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
+              <Text
+                wrap="balance"
+                variant="body-default-s"
+                onBackground="neutral-weak"
+              >
                 {description}
               </Text>
             )}
