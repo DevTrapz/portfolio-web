@@ -13,9 +13,11 @@ import {
   blog,
   work,
   gallery,
+  brand,
 } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
+import { Logo } from "@/components/Logo";
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -95,7 +97,9 @@ export const Header = () => {
           vertical="center"
           textVariant="body-default-s"
         >
-          {display.timezone && <Row s={{ hide: true }}>{person.timezone}</Row>}
+          <Logo image={brand.image}></Logo>
+          {/* {brand.display && brand.title} */}
+          {/* {display.timezone && <Row s={{ hide: true }}>{person.timezone}</Row>} */}
         </Row>
         <Row fillWidth horizontal="center">
           <Row
@@ -215,7 +219,7 @@ export const Header = () => {
             gap="20"
           >
             <Flex s={{ hide: true }}>
-              {display.time && <TimeDisplay timeZone={person.timezone} />}
+              {/* {display.time && <TimeDisplay timeZone={person.timezone} />} */}
             </Flex>
           </Flex>
         </Flex>
