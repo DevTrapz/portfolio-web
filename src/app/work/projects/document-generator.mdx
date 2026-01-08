@@ -1,0 +1,68 @@
+---
+display: true
+title: "Document generator for enrolled students"
+publishedAt: "2026-01-06"
+summary: "Document generator for enrolled students to review their course work called 'Blueprint' and download if for safe keeping"
+company: Center for Intuitive Education
+companyUrl: "https://www.centerforintuitiveeducation.org/"
+team:
+  - name: "Andrew Apodaca"
+    role: "Developer / Documentation Author"
+    avatar: "/images/avatars/andrew.png"
+    linkedIn: "https://www.linkedin.com/in/andrew-apodaca/"
+  - name: "Chave Avery"
+    role: "Developer / Documentation Author"
+    avatar: "/images/avatars/chase.png"
+    linkedIn: "https://www.linkedin.com/in/chase-avery-361044272/"
+tags:
+  - name: React
+    icon: react
+  - name: TypeScript
+    icon: typescript
+---
+
+# Why this?
+
+We've all been there before.. Juggling between email sequences for your newletters and promotions; while creating landing pages to your website blog with the samething. You're going back and forth; copying and pasting.. while fussing with the formatting.
+
+This sucks.
+
+Not only is your workflow choppy and leads to inconsitent results, but its also costing your most valuable asset, your time!
+
+## Solution
+
+What you really need, is a way to consolidate these workflows between email broadcasts and website updates. That's why me and my team have worked to implement RSS blog updates directly into a CRM.
+
+Once you published your blog, an email is send to all your blog subscribers on your CRM platform.
+
+# Overview
+
+This service delivers blog posts, also known as RSS updates, to a list of CRM subscribers.
+
+## Core Components
+
+The service relies on several core components for its operation:
+
+*   **Automations:**
+    *   An Opt-in process to manage new subscriber additions.
+    *   An Opt-out process to handle user unsubscribes.
+    *   A Broadcast process responsible for dispatching the final email.
+*   **User Interface:**
+    *   User-facing pages for both opt-in and opt-out functionalities.
+*   **Email & Data Fields:**
+    *   The primary email template for the forwarded RSS updates, which is dynamically managed by the integration.
+    *   A contact tag used to initiate the email broadcast.
+    *   A contact field to track the specific email list subscription type.
+*   **Integration:**
+    *   An external automation platform that monitors the RSS feed for new content and orchestrates the entire broadcast process.
+
+## Broadcast Process Summary
+
+The high-level steps for broadcasting a blog update are:
+
+*   **Initiation**: The process is triggered automatically when a new update is detected on the RSS feed.
+*   **Template Preparation**: The integration service fetches the new RSS content and dynamically updates the stored email template.
+*   **Subscriber Identification**: The system queries the contact database to identify all current subscribers.
+*   **Broadcast Trigger**: Subscribers are tagged, which activates the final email broadcast automation within the marketing platform.
+*   **Email Dispatch**: The updated RSS email is sent out to the tagged contacts.
+*   **Process Completion**: The tag is then automatically removed from the contacts, making them ready for the next update.
