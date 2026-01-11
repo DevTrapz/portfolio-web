@@ -19,23 +19,35 @@ tags:
     icon: javascript
 ---
 
-# Why this?
+# Project Overview
 
-We've all been there before.. Juggling between email sequences for your newletters and promotions; while creating landing pages to your website blog with the samething. You're going back and forth; copying and pasting.. while fussing with the formatting.
+## Executive Summary
 
-This sucks.
+The **Blog Update Forwarding Service** is a custom technical solution designed to automate the delivery of RSS blog updates to email subscribers. By bridging the gap between a standard RSS feed and a CRM's broadcast engine, this system eliminates the need for manual email creation and third-party middleware.
 
-Not only is your workflow choppy and leads to inconsitent results, but its also costing your most valuable asset, your time!
+## Background
 
-## Solution
+Currently, **Brand Financial Training** manages their email communications across two disconnected platforms:
+* **Main CRM:** Handles all newsletters and promotional campaigns.
+* **MailChimp:** Used exclusively for automated blog post notifications.
 
-What you really need, is a way to consolidate these workflows between email broadcasts and website updates. That's why me and my team have worked to implement RSS blog updates directly into a CRM.
+### The Challenge
 
-Once you published your blog, an email is send to all your blog subscribers on your CRM platform.
+Operating two separate systems has created fragmented data and unnecessary overhead. The team aims to consolidate all email marketing into their primary CRM to reduce software licensing costs and centralize subscriber management. 
 
-# Overview
+However, the primary CRM lacks a native "RSS-to-Email" feature, creating a technical barrier to decommissioning MailChimp.
 
-This service delivers blog posts, also known as RSS updates, to a list of CRM subscribers.
+
+## Project Objective
+
+The goal of this project is to build an integration layer that monitors the website’s RSS feed and triggers an automated broadcast within the primary CRM. 
+
+**The desired outcome:** When a new blog post is published, an email is automatically generated and dispatched to the synchronized subscriber list, allowing Brand Financial Training to fully migrate away from MailChimp without losing automated functionality.
+
+## Key Benefits
+* **Cost Reduction:** Eliminates the monthly expense of a secondary email service provider (MailChimp).
+* **Centralized Data:** Maintains a single "Source of Truth" for all student and subscriber data within one CRM.
+* **Workflow Efficiency:** Removes the need to manage templates and lists across multiple platforms.
 
 ## Core Components
 
