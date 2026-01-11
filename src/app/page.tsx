@@ -122,9 +122,9 @@ export default function Home() {
         </Column>
       </Column>
       <RevealFx translateY="16" delay={0.6}>
-        <Column fillWidth gap="40" horizontal="center" marginTop="40">
+        <Column fillWidth gap="40" horizontal="center">
           <Line maxWidth="40" />
-          <Heading as="h2" variant="heading-strong-xl" marginBottom="24">
+          <Heading as="h1" variant="heading-strong-xl" marginBottom="24">
             Recent projects
           </Heading>
         </Column>
