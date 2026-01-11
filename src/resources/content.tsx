@@ -11,6 +11,12 @@ import {
 } from "@/types";
 import { Line, ShineFx, Row, Text } from "@once-ui-system/core";
 
+const brand: Brand = {
+  display: true,
+  image: "/images/brand/dev-atomics-logo.svg",
+  name: "Dev Atomics",
+};
+
 const person: Person = {
   firstName: "Andrew",
   lastName: "Apodaca",
@@ -63,7 +69,7 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${brand.name}`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: <>Building bridges between technology and people</>,
   featured: {
@@ -163,15 +169,7 @@ const about: About = {
             content to CRM contacts.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
         company: "Avery Automations",
@@ -214,7 +212,7 @@ const about: About = {
       {
         company: "Support Pets",
         companyUrl: "https://www.supportpets.com/",
-        timeframe: "Aug 2025 - Present",
+        timeframe: "Aug 2025 - Dec 2025",
         role: "Software Contractor",
         tags: [
           {
@@ -542,12 +540,6 @@ const gallery: Gallery = {
       orientation: "vertical",
     },
   ],
-};
-
-const brand: Brand = {
-  display: true,
-  image: "/images/brand/dev-atomics-logo.svg",
-  name: "Dev Atomics",
 };
 
 export { person, social, newsletter, home, about, blog, work, gallery, brand };
