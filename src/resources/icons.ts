@@ -35,12 +35,15 @@ import {
   SiHtml5,
   SiCss3,
   SiZapier,
-  SiGraphql
+  SiGraphql,
+  SiKotlin,
+  SiAndroid,
+  SiSqlite
 } from "react-icons/si";
 
 import { CgMonday } from "react-icons/cg";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaRss } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaRss, FaJava } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -85,7 +88,11 @@ export const iconLibrary: Record<string, IconType> = {
   css: SiCss3,
   zapier: SiZapier,
   rss: FaRss,
-  graphql: SiGraphql
+  graphql: SiGraphql,
+  java: FaJava,
+  kotlin: SiKotlin,
+  android: SiAndroid,
+  sqlite: SiSqlite
 };
 
 export type IconLibrary = typeof iconLibrary;
