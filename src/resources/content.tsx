@@ -124,8 +124,9 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Andrew is a Software Engineer helping businesses streamline CRM
-        operations, develop online portals, and integrate their data systems.
+        Andrew is a results-driven Software Engineer with 2.5 years developing
+        full-stack solutions and dedicated to transforming fragmented business
+        operations into integrated, efficient systems.
       </>
     ),
   },
@@ -137,7 +138,7 @@ const about: About = {
         company: "Denari Software",
         companyUrl: "https://mmautomations.ai/",
         timeframe: "2025 - Present",
-        role: "Software Engineer",
+        role: "Software Engineer - Fullstack",
         tags: [
           {
             name: "React",
@@ -175,7 +176,7 @@ const about: About = {
         company: "Avery Automations",
         companyUrl: "https://www.averyautomations.com",
         timeframe: "2025 - Present",
-        role: "Solutions Engineer",
+        role: "Solutions Engineer - Fullstack",
         tags: [
           {
             name: "React",
@@ -210,10 +211,44 @@ const about: About = {
         images: [],
       },
       {
+        company: "Brave Healer Publishing",
+        companyUrl: "https://www.lauradifranco.com/",
+        timeframe: "Jan 2025 - Present",
+        role: "Software Developer - Fullstack",
+        tags: [
+          {
+            name: "React",
+            icon: "react",
+          },
+          {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+        ],
+        achievements: [
+          <>
+            Engineered a custom Author Portal using React and TypeScript to
+            replace manual project management processes (email/spreadsheets) for
+            co-authored book projects.
+          </>,
+          <>
+            Seamlessly integrated the new portal with their Ontraport CRM to
+            centralize all project operations and overcome previous
+            infrastructure limitations.
+          </>,
+          <>
+            Increased the publisher's scaling capacity by 300%, providing a
+            robust solution for managing project participants and data in one
+            place.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Support Pets",
         companyUrl: "https://www.supportpets.com/",
         timeframe: "Aug 2025 - Dec 2025",
-        role: "Software Contractor",
+        role: "Software Contractor - Fullstack",
         tags: [
           {
             name: "JavaScript",
@@ -252,7 +287,7 @@ const about: About = {
         company: "Center for Intuitive Education",
         companyUrl: "https://www.centerforintuitiveeducation.org/",
         timeframe: "Nov 2025 - Present",
-        role: "Software Contractor ( Frontend )",
+        role: "Software Contractor - Frontend",
         tags: [
           {
             name: "React",
@@ -289,7 +324,7 @@ const about: About = {
         company: "Brand Financial Training",
         companyUrl: "https://brandft.co.uk/",
         timeframe: "Jun 2025 - Nov 2025",
-        role: "Software Contractor ( Backend )",
+        role: "Software Engineer - Backend",
         tags: [
           {
             name: "JavaScript",
@@ -325,11 +360,46 @@ const about: About = {
         images: [],
       },
       {
+        company: "Association Reserves",
+        companyUrl: "https://www.reservestudy.com/",
+        timeframe: "Jun 2025 - Nov 2025",
+        role: "Software Contractor - Backend",
+        tags: [
+          {
+            name: "JavaScript",
+            icon: "javascript",
+          },
+          {
+            name: "Ontraport",
+            icon: "Ontraport",
+          },
+        ],
+        achievements: [
+          <>
+            Fixed a major bug in the Large Bid Notification Automation by
+            directly pulling the bid threshold from the entity, which eliminated
+            a faulty Zapier dependency and prevented low-value bids from
+            triggering unnecessary reminders.
+          </>,
+          <>
+            Corrected a critical process flaw in the DIY Reserve Study Kit by
+            investigating and rerouting "Worship Facility" clients from an
+            incorrect form to the designated San Diego form (LLC-CA-SD),
+            ensuring proper entity assignment and compliance.
+          </>,
+          <>
+            Resolved a mass email automation issue by identifying and removing
+            3,000+ incomplete records that were stuck in the "Rate and Review"
+            campaign, immediately correcting data and communication flow.
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "Brightside Chiropractor",
         companyUrl: "https://brightsideutah.com/",
-
         timeframe: "Aug 2025 - Oct 2025",
-        role: "Software Contractor ( Backend )",
+        role: "Software Contractor - Frontend",
         tags: [
           {
             name: "JavaScript",
@@ -364,7 +434,7 @@ const about: About = {
         company: "Monday Man",
         companyUrl: "https://themondayman.com/",
         timeframe: "Jun 2023 - Mar 2024",
-        role: "Software Contractor ( Frontend  )",
+        role: "Software Contractor - Frontend",
         tags: [
           {
             name: "React",
