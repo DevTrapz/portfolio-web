@@ -1,0 +1,81 @@
+---
+display: true
+title: "Building a Project Management Dashboard for Co-authored Book Projects"
+publishedAt: "2025-10-03"
+summary: "A React-based project dashboard designed to streamline project management workflows, centralize task tracking, and eliminate operational bottlenecks for Brave Health Publishing."
+company: "Brave Health Publishing"
+companyUrl: "https://www.lauradifranco.com/"
+team:
+  - name: "Andrew Apodaca"
+    role: "Developer / Documentation Author"
+    avatar: "/images/avatars/andrew.png"
+    linkedIn: "https://www.linkedin.com/in/andrew-apodaca/"
+  - name: "Chase Avery"
+    role: "Developer / Documentation Author"
+    avatar: "/images/avatars/chase.png"
+    linkedIn: "https://www.linkedin.com/in/chase-avery-361044272/"
+tags:
+  - name: React
+    icon: react
+  - name: TypeScript
+    icon: typescript
+  - name: AG Grid
+    icon: aggrid
+---
+
+# Project Overview
+
+## Executive Summary
+Brave Health Publishing specializes in collaborative literary works. Managing dozens of co-authors simultaneously across various publication stages requires precision. This project introduces a custom-built **Project Management Dashboard** designed to bridge the gap between back-end CRM data and front-end project visibility. By consolidating communication and progress tracking, the dashboard transforms a manual, error-prone process into a scalable digital ecosystem.
+
+
+
+## Background & Pain Points
+
+Historically, Brave Health Publishing relied on a fragmented "tech stack" of Google Sheets, disparate email threads, Dropbox folders, and verbal updates during Zoom calls. As the number of co-authored projects increased, this manual coordination led to significant operational strain.
+
+### Critical Challenges:
+* **Invisibility of Progress:** Project Managers (PMs) lacked a "single source of truth." Determining if an author had completed a manuscript draft or submitted a headshot required manual cross-referencing of emails and folders.
+* **Communication Overhead:** Status updates were handled through high-touch manual outreach (emails/Zoom), creating a "bottleneck" where the PM spent more time asking for updates than managing the project.
+* **Lack of Author Autonomy:** Co-authors lacked a personalized roadmap. They often struggled to find instructions or verify which tasks were still pending, leading to repeated inquiries to the publishing team.
+* **Data Fragmentation:** While the primary CRM (Ontraport) held contact data, it lacked the complex visualization capabilities needed to manage a multi-step editorial workflow.
+
+## The Solution: A Unified React PMS
+
+To resolve these issues, we developed a high-performance **React/TypeScript** web application. This application serves as an intelligent data visualization layer that pulls real-time information from the CRM and presents it in a searchable, filterable, and actionable grid.
+
+
+
+## Project Requirements
+
+The system was engineered to meet specific administrative and operational criteria:
+
+### 1. Centralized Contributor Management
+* **Unified View:** A comprehensive list of all co-authors, including metadata such as contact information, contract status, and assigned book projects.
+* **Granular Search & Filtering:** The ability to filter authors by specific milestones (e.g., "Show all authors who haven't submitted bios") or search via name, email, and phone.
+
+### 2. Real-Time Task Tracking
+* **Dynamic Milestones:** A visual representation of the publication pipeline, indicating completion status for tasks like manuscript submission, legal waivers, and promotional assets.
+* **Automated Status Mapping:** Logic that translates CRM data points into visual "Completed" or "Pending" indicators within the dashboard.
+
+### 3. Integrated User Experience
+* **Embedded Interface:** The dashboard must live where the team already works, utilizing an iFrame integration within the Ontraport environment.
+* **Secure Data Passing:** Leveraging URL Query Parameters to pass sensitive student/author data securely from the host CRM to the React application.
+
+---
+
+## Core Components & Technology Stack
+
+### **Frontend & Logic**
+* **React & TypeScript:** Provides a type-safe environment for managing complex UI states and conditional logic used to evaluate author progress.
+* **AG Grid:** Utilized as the core engine for the dashboard. It provides "Excel-like" functionality, allowing PMs to perform complex grouping, sorting, and live filtering on hundreds of records simultaneously.
+
+
+
+### **Integration Layer**
+* **Ontraport iFrame:** The application is seamlessly embedded into the internal CRM, ensuring that the PMs never have to leave their primary workspace to check project status.
+* **RESTful Data Flow:** The application is designed to be data-agnostic, receiving inputs via URL parameters to trigger specific views or filter sets without requiring manual script execution.
+
+## The Result?
+
+By moving away from "Manual Management" to an "Automated Dashboard," Brave Health Publishing can now scale their project volume without increasing their administrative headcount. Project Managers gain hours back each week, and co-authors enjoy a streamlined, professional path to becoming published authors.
