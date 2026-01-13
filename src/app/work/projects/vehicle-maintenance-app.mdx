@@ -1,0 +1,81 @@
+---
+display: true
+title: "Developing an Andriod Mobile App: The Vehicle Maintenance Tracker"
+publishedAt: "2025-11-05"
+summary: "High-level overview of an Android-based maintenance tracking solution designed to replace manual record-keeping with automated service reminders and local data persistence."
+company: "Western Governors University"
+companyUrl: "https://www.wgu.edu/"
+team:
+  - name: "Andrew Apodaca"
+    role: "App Developer"
+    avatar: "/images/avatars/andrew.png"
+    linkedIn: "https://www.linkedin.com/in/andrew-apodaca/"
+tags:
+  - name: Android
+    icon: android
+  - name: Kotlin
+    icon: kotlin
+  - name: Java
+    icon: java
+  - name: SQLite
+    icon: sqlite
+---
+
+# Project Overview
+
+## Executive Summary
+
+The **Vehicle Maintenance Tracker** is a custom Android application designed to automate the monitoring and documentation of vehicle service histories. By providing a centralized digital platform for maintenance logs and proactive reminders, this system eliminates the reliance on fragmented paper records and prevents costly vehicle neglect.
+
+## Background
+
+Currently, many vehicle owners manage their maintenance schedules using inefficient, manual methods:
+* **Physical Folders:** Crammed with fading receipts and handwritten notes.
+* **Memory:** Relying on mental recall for service intervals like oil changes or tire rotations.
+
+### The Challenge
+
+Manual tracking leads to inconsistent data and significant maintenance gaps. Owners often miss critical service windows because they lack a "push" notification system, resulting in decreased vehicle reliability, lower resale value, and potential safety hazards. Furthermore, many existing digital solutions require cloud subscriptions, raising privacy concerns for users who prefer keeping their data local.
+
+## Project Objective
+
+The goal of this project is to build a robust mobile application that serves as a digital "garage" for the user. 
+
+**The desired outcome:** Provide a secure, offline-first environment where a user can manage multiple vehicle profiles, log service history, and receive automated push notifications for upcoming tasks. This allows the owner to transition from reactive repairs to proactive vehicle management.
+
+## Key Benefits
+* **Safety & Reliability:** Ensures critical maintenance is never overlooked through timely system notifications.
+* **Data Privacy:** Utilizes local SQLite persistence (Room Library), ensuring vehicle data remains on the device.
+* **Increased Asset Value:** Maintains a chronological, digital service history that can be used to prove vehicle care during resale.
+* **Cost Efficiency:** Reduces the likelihood of major mechanical failures by promoting regular, low-cost preventative maintenance.
+
+## Core Components
+
+The service relies on several technical components for its operation:
+
+* **Data Persistence (Room Library):**
+    * A local SQLite database to store vehicle specs and service records.
+    * An abstraction layer (DAOs) to handle secure data retrieval and updates.
+* **User Interface (Material 3):**
+    * A responsive dashboard for viewing current vehicle status.
+    * Input forms for adding vehicle details and logging service events.
+* **Notification Engine:**
+    * An automated system that calculates service due dates and triggers Android system alerts.
+* **Development Framework:**
+    * Built using the **Waterfall SDLC Methodology**, ensuring a disciplined progression from requirement gathering to final deployment.
+
+
+
+[Image of the Waterfall software development life cycle phases]
+
+
+## Maintenance Management Process
+
+The high-level steps for tracking a vehicle update are:
+
+* **Vehicle Creation**: The user inputs specific vehicle details (Make, Model, Year, Mileage) to establish a baseline profile.
+* **Service Logging**: When maintenance is performed, the user enters the cost, date, and mileage.
+* **Notification Scheduling**: Based on the log entry, the system calculates the next required service interval.
+* **Alert Trigger**: The Android system monitors the schedule and dispatches a notification to the user's device when service is due.
+* **Verification & Testing**: The system undergoes Unit Testing (to ensure data integrity) and Acceptance Testing (to ensure all user stories, such as "adding a vehicle," function correctly).
+* **Deployment**: A final signed APK is generated, allowing the user to install the application and begin tracking immediately.
