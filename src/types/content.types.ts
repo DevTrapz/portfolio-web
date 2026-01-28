@@ -122,6 +122,16 @@ export interface About extends BasePageConfig {
     /** Whether to display the avatar */
     display: boolean;
   };
+  /** Timezone section configuration */
+  timezone: {
+    /** Whether to display the timezone */
+    display: boolean;
+  };
+  /** location section configuration */
+  location: {
+    /** Whether to display the location */
+    display: boolean;
+  };
   /** Calendar section configuration */
   calendar: {
     /** Whether to display the calendar */

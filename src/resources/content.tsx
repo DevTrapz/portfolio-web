@@ -115,6 +115,12 @@ const about: About = {
   avatar: {
     display: true,
   },
+  timezone: {
+    display: false,
+  },
+  location: {
+    display: true,
+  },
   calendar: {
     display: true,
     link: "https://calendar.app.google/dgap1AU5zKy5BiQv9",

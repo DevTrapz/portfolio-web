@@ -95,14 +95,18 @@ export default function About() {
           >
             <Avatar src={person.avatar} size="xl" />
 
-            <Row gap="8" vertical="center" horizontal="between">
-              <Icon onBackground="brand-weak" name="globe" />
-              {person.location}
-            </Row>
-            <Row gap="8" vertical="center">
-              <Icon onBackground="brand-weak" name="clock" />
-              {person.timezone}
-            </Row>
+            {about.location.display && (
+              <Row gap="8" vertical="center" horizontal="between">
+                <Icon onBackground="brand-weak" name="globe" />
+                {person.location}
+              </Row>
+            )}
+            {about.timezone.display && (
+              <Row gap="8" vertical="center">
+                <Icon onBackground="brand-weak" name="clock" />
+                {person.timezone}
+              </Row>
+            )}
             {person.languages && person.languages.length > 0 && (
               <Row wrap gap="8">
                 {person.languages.map((language, index) => (
@@ -199,7 +203,7 @@ export default function About() {
                             />
                           </Row>
                         </React.Fragment>
-                      )
+                      ),
                   )}
               </Row>
             )}
@@ -284,7 +288,7 @@ export default function About() {
                           >
                             {achievement}
                           </Text>
-                        )
+                        ),
                       )}
                     </Column>
                     {experience.images && experience.images.length > 0 && (
